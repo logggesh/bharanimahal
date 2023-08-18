@@ -80,6 +80,15 @@ img{
         height: 330px !important;
         width: 100% !important;
     }
+    @keyframes movetext{
+        0%{
+            opacity:0;
+            left:-200px
+        }
+        100%{
+            opacity:1;
+            left:30px
+        }
 }
 @keyframes movetext {
     0%{
