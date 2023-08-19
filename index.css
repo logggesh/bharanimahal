@@ -1,7 +1,4 @@
-body{
-    display: flex;
-    flex-direction: column;
-}
+
 .rm{
     margin-top: 10px !important;
     min-height: 330px !important;
@@ -59,6 +56,86 @@ img{
     font-size: 40px;
     font-family: metropolis;
 }
+.steps{
+    min-height: 500px !important;
+}
+.step1{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #FFDBC3;
+}
+.step2{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #FFDBC3;
+}
+.step3{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #FFDBC3;
+}
+.step1::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content:url('icons/1.png');
+    width: 300px;
+    height: 300px;
+    background: #FF6969;
+    transition: 1s ease-in-out;
+}
+.step1:hover::before {
+    opacity: 3;
+    background-color: #F31559;
+    top:-300px;
+}
+.step2::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content:url('icons/2.png');
+    width: 300px;
+    height: 300px;
+    background: #FF6969;
+    transition: 1s ease-in-out;
+}
+.step2:hover::before {
+    opacity: 3;
+    background-color: #F31559;
+    top:-300px;
+}
+.step3::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content:url('icons/3.png');
+    width: 300px;
+    height: 300px;
+    background: #FF6969;
+    transition: 1s ease-in-out;
+}
+.step3:hover::before {
+    opacity: 3;
+    background-color: #F31559;
+    top:-300px;
+}
+.hovcont{
+    margin-top: 100px;
+    font-family: roboto;
+}
+@font-face {
+    font-family: "roboto";
+    src: url('fonts/Roboto-Medium.ttf');
+}
 @font-face {
     font-family: "metropolis";
     src: url('fonts/Metropolis-Thin.otf');
@@ -66,9 +143,11 @@ img{
 @font-face {
     font-family: "roboto";
     src: url('fonts/Roboto-BlackItalic.ttf');
-    src: url();
 }
 @media(max-width:768px){
+    .steps{
+        min-height: 700px;
+    }
     .carousel-item{
         height: 330px !important;
     }
@@ -80,15 +159,84 @@ img{
         height: 330px !important;
         width: 100% !important;
     }
-    @keyframes movetext{
-        0%{
-            opacity:0;
-            left:-200px
-        }
-        100%{
-            opacity:1;
-            left:30px
-        }
+    .abtuscontshw{
+        font-size: 20px;
+    }
+    .step1{
+        margin-top: 50px;
+        position: relative;
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+        padding: 15px;
+        background-color: #FFDBC3;
+    }
+    .step2{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+        padding: 15px;
+        background-color: #FFDBC3;
+    }
+    .step3{
+        margin-top: 100px !important;
+        position: relative;
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+        padding: 15px;
+        background-color: #FFDBC3;
+    }
+    .step1::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content:url('icons/1.png');
+        width: 150px;
+        height: 150px;
+        background: #FF6969;
+        transition: 1s ease-in-out;
+    }
+    .step1:hover::before {
+        opacity: 3;
+        background-color: #F31559;
+        top:-150px;
+    }
+    .step2::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content:url('icons/2.png');
+        width: 150px;
+        height: 150px;
+        background: #FF6969;
+        transition: 1s ease-in-out;
+    }
+    .step2:hover::before {
+        opacity: 3;
+        background-color: #F31559;
+        top:-150px;
+    }
+    .step3::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content:url('icons/3.png');
+        width: 150px;
+        height: 150px;
+        background: #FF6969;
+        transition: 1s ease-in-out;
+    }
+    .step3:hover::before {
+        opacity: 3;
+        background-color: #F31559;
+        top:-150px;
+    }
+    .hovcont{
+        margin-top: 15px;
+        font-size: 18px;
+    }
 }
 @keyframes movetext {
     0%{
