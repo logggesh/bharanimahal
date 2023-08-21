@@ -57,7 +57,7 @@ img{
     font-family: metropolis;
 }
 .steps{
-    min-height: 500px !important;
+    min-height: 650px !important;
 }
 .step1{
     position: relative;
@@ -95,7 +95,7 @@ img{
 }
 .step1:hover::before {
     opacity: 3;
-    background-color: #F31559;
+    background-color: #4dff4d;
     top:-300px;
 }
 .step2::before {
@@ -110,7 +110,7 @@ img{
 }
 .step2:hover::before {
     opacity: 3;
-    background-color: #F31559;
+    background-color: #4dff4d;
     top:-300px;
 }
 .step3::before {
@@ -125,12 +125,33 @@ img{
 }
 .step3:hover::before {
     opacity: 3;
-    background-color: #F31559;
+    background-color: #4dff4d;
     top:-300px;
 }
 .hovcont{
     margin-top: 100px;
     font-family: roboto;
+}
+.backclr{
+    background-color: #3F2E3E;
+    min-height: 550px;  
+}
+.sp{
+    border-right: 2px solid white;
+    padding-right: 50px;
+}
+.hv:hover{
+    background-color: black;
+    transition: 2s;
+}
+.contactus{
+    background-color: #191A19;
+    min-height: 700px;
+}
+.embed-responsive-item{
+    height: 400px;
+    width: 500px;
+    margin-left: 150px !important;
 }
 @font-face {
     font-family: "roboto";
@@ -147,6 +168,12 @@ img{
 @media(max-width:768px){
     .steps{
         min-height: 700px;
+    }
+    .sp{
+        border-right: none;
+    }
+    .mvdown{
+        margin-top: 45px !important;
     }
     .carousel-item{
         height: 330px !important;
@@ -192,7 +219,7 @@ img{
         position: absolute;
         top: 0;
         left: 0;
-        content:url('icons/1.png');
+        content:url('icons/1sm.png');
         width: 150px;
         height: 150px;
         background: #FF6969;
@@ -200,14 +227,14 @@ img{
     }
     .step1:hover::before {
         opacity: 3;
-        background-color: #F31559;
+        background-color: #4dff4d;
         top:-150px;
     }
     .step2::before {
         position: absolute;
         top: 0;
         left: 0;
-        content:url('icons/2.png');
+        content:url('icons/2sm.png');
         width: 150px;
         height: 150px;
         background: #FF6969;
@@ -215,14 +242,14 @@ img{
     }
     .step2:hover::before {
         opacity: 3;
-        background-color: #F31559;
+        background-color: #4dff4d;
         top:-150px;
     }
     .step3::before {
         position: absolute;
         top: 0;
         left: 0;
-        content:url('icons/3.png');
+        content:url('icons/3sm.png');
         width: 150px;
         height: 150px;
         background: #FF6969;
@@ -230,12 +257,30 @@ img{
     }
     .step3:hover::before {
         opacity: 3;
-        background-color: #F31559;
+        background-color: #4dff4d;
         top:-150px;
     }
     .hovcont{
         margin-top: 15px;
         font-size: 18px;
+    }
+    .steps{
+        height: 900px !important;
+    }
+    .embed-responsive-item{
+        margin-right: 150px !important;
+        height: 300px !important;
+        width: 300px !important;
+    }
+    .contactus{
+       min-height: 800px !important;
+    }
+    .backclr{
+        height: 1000px;
+    }
+    .navbar-toggler-icon,.navbar-toggler{
+        background-color: white;
+        color: white;
     }
 }
 @keyframes movetext {
