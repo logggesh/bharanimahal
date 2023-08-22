@@ -166,6 +166,9 @@ img{
     src: url('fonts/Roboto-BlackItalic.ttf');
 }
 @media(max-width:768px){
+    .lftmv{
+        margin-left: 50px !important;
+    }
     .steps{
         min-height: 700px;
     }
