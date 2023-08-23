@@ -19,7 +19,10 @@
     position: relative;
     animation: moveleft 2s ease-in;
 }
-
+.contusdown{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
 .carousel-item img{
     height: 650px !important;
     width: 100% !important;
@@ -146,12 +149,16 @@ img{
 }
 .contactus{
     background-color: #191A19;
-    min-height: 700px;
+    min-height: 780px;
 }
 .embed-responsive-item{
     height: 400px;
     width: 500px;
     margin-left: 150px !important;
+}
+.nav-link:hover{
+    background-color: #E8BEAC;
+    transition: 1s;
 }
 @font-face {
     font-family: "roboto";
@@ -284,6 +291,9 @@ img{
     .navbar-toggler-icon,.navbar-toggler{
         background-color: white;
         color: white;
+    }
+    .contusdown{
+        font-size: 15px;
     }
 }
 @keyframes movetext {
