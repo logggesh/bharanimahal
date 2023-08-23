@@ -135,6 +135,10 @@ img{
     margin-top: 100px;
     font-family: roboto;
 }
+img{
+    height: 70px !important;
+    width: 225px !important;
+}
 .backclr{
     background-color: #3F2E3E;
     min-height: 550px;  
@@ -156,9 +160,15 @@ img{
     width: 500px;
     margin-left: 150px !important;
 }
+.moveit{
+    animation: moveimg 1s linear;
+}
 .nav-link:hover{
     background-color: #E8BEAC;
     transition: 1s;
+}
+.carousel-inner{
+    margin: 0;
 }
 @font-face {
     font-family: "roboto";
@@ -286,7 +296,7 @@ img{
        min-height: 800px !important;
     }
     .backclr{
-        height: 1120px;
+        height: 1080px;
     }
     .navbar-toggler-icon,.navbar-toggler{
         background-color: white;
@@ -314,5 +324,13 @@ img{
     100%{
         opacity: 1;
         left: -50px;
+    }
+}
+@keyframes moveimg{
+    0%{
+        left: 200px;
+    }
+    100%{
+        left: 500px;
     }
 }
