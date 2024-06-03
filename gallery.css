@@ -1,0 +1,19 @@
+.imagepopcont{
+    background-color: azure;
+    height: 100%;
+    display: none;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.popupimage{
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
